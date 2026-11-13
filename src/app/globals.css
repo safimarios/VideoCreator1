@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-cairo), "Segoe UI", system-ui, sans-serif;
+  --color-night: #0b1020;
+  --color-panel: #121a33;
+  --color-edge: #24305c;
+  --color-accent: #22d3ee;
+  --color-accent2: #a78bfa;
+}
+
+body {
+  background: linear-gradient(160deg, #0b1020 0%, #0e1430 55%, #141a3a 100%);
+  color: #e6ebff;
+  min-height: 100vh;
+}
+
+.card {
+  background: rgba(18, 26, 51, 0.85);
+  border: 1px solid #24305c;
+  border-radius: 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.chip {
+  border: 1px solid #24305c;
+  border-radius: 9999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  background: rgba(34, 211, 238, 0.07);
+}
+
+.btn {
+  border-radius: 0.6rem;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  border: 1px solid #24305c;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: #22d3ee;
+  color: #22d3ee;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #22d3ee 0%, #a78bfa 100%);
+  color: #0b1020;
+  border: none;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  color: #0b1020;
+}
+
+input,
+select {
+  background: #0d1230;
+  border: 1px solid #24305c;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  color: #e6ebff;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #22d3ee;
+}
+
+pre.json {
+  direction: ltr;
+  text-align: left;
+  background: #0a0f24;
+  border: 1px solid #24305c;
+  border-radius: 0.6rem;
+  padding: 0.9rem;
+  font-size: 0.78rem;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
